@@ -10,8 +10,8 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            background-color: #121212; /* Dark background */
-            color: #e0e0e0; /* Light text */
+            background-color: #121212;
+            color: #e0e0e0;
             margin: 0;
             padding: 20px;
         }
@@ -19,28 +19,53 @@
             position: relative;
             max-width: 800px;
             margin: auto;
-            background: #1e1e1e; /* Slightly lighter than body for contrast */
+            background: #1e1e1e;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adjusted for darker theme */
-            border-radius: 8px; /* Optional: adds rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
         }
         .profile-pic {
             position: absolute;
             top: 20px;
             right: 20px;
             border-radius: 50%;
-            width: 100px; /* Adjust the size as needed */
-            border: 2px solid #333; /* Optional: adds a border around the image */
+            width: 100px;
+            border: 2px solid #333;
         }
-        h1 {
-            color: #fff; /* White color for the heading */
+        h1, h2 {
+            color: #fff;
             margin-bottom: 20px;
         }
         p {
             margin-bottom: 10px;
         }
         a {
-            color: #4e9af1; /* Bright color for links for better visibility */
+            color: #4e9af1;
+            text-decoration: none;
+        }
+
+        .social-media {
+            background: #1e1e1e;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+        }
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-gap: 20px;
+            text-align: center;
+        }
+        .social-link img {
+            width: 50px;
+            margin-bottom: 5px;
+            border-radius: 50%;
+        }
+        .social-link a {
+            display: block;
+            color: #4e9af1;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -51,7 +76,35 @@
         <p>Hello! My name is Archer. I'm a 15-year-old with a passion for AI.</p>
         <p>I enjoy messing around with code, making AI Projects and making Discord bots.</p>
         <p>In my free time, I enjoy gaming and talking on Discord.</p>
-        <p>You can contact me at my email <a href="mailto:archer@thebritishcombine.com">archer@thebritishcombine.com</a> or thebritishcombine on Discord.</p>
+
+        <!-- Social Media Box -->
+        <div class="social-media">
+            <h2>My GPT's</h2>
+            <div class="social-grid">
+                <div class="social-link">
+                    <img src="pythonmentor.png" alt="Python Mentor">
+                    <a href="https://chat.openai.com/g/g-Q6oHOpxRM-python-mentor" target="_blank">Python Mentor</a>
+                    <p>A Python teacher that explains, assigns, and grades projects. </p>
+                </div>
+                <div class="social-link">
+                    <img src="dnd30min.png" alt="Quick RPG DM">
+                    <a href="https://chat.openai.com/g/g-A3XNZXcTt-quick-rpg-dm" target="_blank">Quick D&D DM</a>
+                    <p>I'm your Dungeon Master, guiding you through quick and thrilling RPG adventures! </p>
+                </div>
+                <div class="social-link">
+                    <img src="EZWeb.png" alt="EZWeb GPT">
+                    <a href="https://chat.openai.com/g/g-vC6tL2L1t-ezweb-gpt" target="_blank">EZWeb GPT</a>
+                    <p>Creates websites from prompts, provides download links.</p>
+                </div>
+                <div class="social-link">
+                    <img src="lethal.png" alt="Lethal Companion">
+                    <a href="https://chat.openai.com/g/g-cCYflyiDo-lethal-companion" target="_blank">Lethal Companion</a>
+                    <p>A friendly guide for the game Lethal Company.</p>
+                </div>
+                </div>
+                <!-- Add more social links as needed -->
+            </div>
+        </div>
     </div>
 </body>
 </html>
